@@ -1,16 +1,16 @@
+#include <string>
+#include <iostream>
+using namespace std;
 class Class
 {
-private:
-    int name;
-
 public:
+    string name;
     int getName();
 };
 
-int Class ::getName()
-{
-    return name;
-}
 int main()
 {
+    Class obj;
+    obj.name = "Prajakta";
+    cout << "Name: " << obj.name << endl;
 }
